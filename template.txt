@@ -1,0 +1,14 @@
+Incident Report:
+
+MDE a déclenché une alerte pour "{{ files.incidentTitle }}"
+
+Fichiers impliqués :
+{% for file_name, details in files.items() %}
+  {% if file_name != 'incidentTitle' %}
+  - Fichier : {{ file_name }}
+    Chemin : {{ details.file_path }}
+    SHA256 : {{ details.sha256 }}
+    Score VirusTotal : {{ details.vt_score }}
+    Command Line : {{ details.command_line }}
+  {% endif %}
+{% endfor %}

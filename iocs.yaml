@@ -1,0 +1,12 @@
+files:
+  incidentTitle: Lumma stealer
+  malicious.exe:
+    file_path: "/path/to/suspicious/file"
+    sha256: "d41d8cd98f00b204e9800998ecf8427e"
+    vt_score: "5/70"
+    command_line: "C:\\Windows\\System32\\cmd.exe /c start /min /wait /d \"C:\\Users\\Public\\Downloads\" \"C:\\Users\\Public\\Downloads\\malicious.exe\""
+  suspicious.dll:
+    file_path: "/path/to/another/file"
+    sha256: "e99a18c428cb38d5f260853678922e03"
+    vt_score: "12/70"
+    command_line: "C:\\Windows\\System32\\cmd.exe /c start /min /wait /d \"C:\\Users\\Public\\Downloads\" \"C:\\Users\\Public\\Downloads\\malicious.exe\""
